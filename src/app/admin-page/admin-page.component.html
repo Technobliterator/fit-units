@@ -1,0 +1,25 @@
+<div style="margin-top:80px;" class="container">
+    <table class="table table-fixed table-hover table-sm" style="width:99%;">
+        <thead>
+          <tr>
+
+            <th class="table-header"> NAME</th>
+            <th class="table-header">EMAIL</th>
+            <th class="table-header">PASSWORD</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <ng-container *ngFor="let item of userData">
+            <tr style="border:1px solid #E8E8E8">
+
+              <td class="input_font">{{item.name}}</td>
+              <td class="input_font">{{item.email}}</td>
+              <td class="input_font">{{item.password}}</td>      
+             
+            </tr>
+
+          </ng-container>
+        </tbody>
+      </table>
+</div>
